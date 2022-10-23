@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <title>Zappi-pizzeria</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/assets/hero/nucbazappiicon 1.png">
+  <link rel="stylesheet" href="/assets/carrito.css">
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header class="header-container">
+    <nav>
+      <div class="navbar-logo">
+        <img src="./assets/hero/nucbazappiicon 1.png" alt="logo" class="logo-img" />
+      </div>
+      <ul class="navbar-list">
+        <li class="home">
+          <img src="./assets/hero/Home.png" alt="home" />
+          <a href="#">Home</a class="home">
+        </li>
+        <li>
+          <i class="fa-solid fa-cart-shopping position-card" id="cart"></i>
+          <div class="number-products">1</div>
+        </li>
+        <li><i class="fa-solid fa-user"></i></li>
+      </ul>
+      <div class="mis-compras hidden">
+        <div class="header-cart">
+          <button class="close-button">X</button>
+          <h4>Tus productos</h4>
+        </div>
+
+        <div class="cart-products"></div>
+
+        <div class="finish-buy">
+          <div class="subtotal">
+            <h5>Subtotal</h5>
+            <span class="sub">$4890</span>
+          </div>
+          <div class="send">
+            <h5>Envio:</h5>
+            <span>Gratis</span>
+          </div>
+          <div class="total">
+            <div class="total-products">
+              <h5>Total:</h5>
+              <span class="tot">$4890</span>
+            </div>
+
+            <div class="buy">
+              <button class="buy-button disabled">COMPRAR</button>
+              <a href="#">Ver más productos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+
+  </header>
+  <div class="main-container">
+    <main>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Si tenes Zappi,</h1>
+          <h2>tenés Nucba.</h2>
+          <p>Buscá lo que quieras y nucba te quedes sin comida.</p>
+          <button class="hero-button"><a href="#section4">VER MÁS</a></button>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/hero/image 34.png" alt="pizza" class="pizza1" />
+          <img src="./assets/hero/pizza 1.png" alt="pizza" class="pizza2" />
+        </div>
+      </div>
+      <section class="section2">
+        <div class="section-tittle">
+          <p>Hoy te recomendamos</p>
+        </div>
+
+        <div class="card-container">
+
+          <div class="card-recomendaciones">
+            <img src="./assets/recomendados/Photo Menu.png" alt="">
+            <div class="description">
+              <p>Bennazianna</p>
+              <p class="p2">La más completa</p>
+              <span>$ 3650</span>
+            </div>
+            <a href="#" class="btn-agregar">Agregar</a>
+          </div>
+          <div class="card-recomendaciones">
+            <img src="./assets/recomendados/Photo Menu (1).png" alt="">
+            <div class="description">
+              <p>Tronco-Pizza</p>
+              <p class="p2">Para todo el día</p>
+              <span>$ 870</span>
+            </div>
+            <a href="#" class="btn-agregar">Agregar</a>
+          </div>
+          <div class="card-recomendaciones">
+            <img src="./assets/recomendados/Photo Menu (2).png" alt="">
+            <div class="description">
+              <p>Papas | Provenzal</p>
+              <p class="p2">Van como piña</p>
+              <span>$ 360</span>
+            </div>
+            <a href="#" class="btn-agregar">Agregar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3">
+        <div class="section3-title">
+          <h2>Categorias</h2>
+        </div>
+
+        <div class="card-category-container">
+          <div class="category" data-category="pizza">
+            <img src="/assets/categorias/pizza.png" alt="" class="cat-pizza" data-category="pizza">
+            <h3 data-category="pizza">Pizzas</h3>
+            <div class="bar" data-category="pizza"></div>
+          </div>
+          <div class="category" data-category="burger">
+            <img src="/assets/categorias/burger.png" alt="" class=" cat-burguer" data-category="burger">
+            <h3 data-category="burger">Hamburguesas</h3>
+            <div class="bar" data-category="burger"></div>
+          </div>
+          <div class="category" data-category="papas">
+            <img src="/assets/categorias/papas.png" alt="" class="cat-papas" data-category="papas">
+            <h3 data-category="papas">Napapuki</h3>
+            <div class="bar" data-category="papas"></div>
+          </div>
+          <div class="category" data-category="individual">
+            <img src="/assets/categorias/porcion.png" alt="" class="cat-individual" data-category="individual">
+            <h3 data-category="individual">Individuales</h3>
+            <div class="bar" data-category="individual"></div>
+          </div>
+          <div class="category" data-category="">
+            <img src="/assets/categorias/buritto.png" alt="" class="cat-burrito">
+            <h3>Wraps</h3>
+            <div class="bar"></div>
+          </div>
+          <div class="category" data-category="">
+            <img src="/assets/categorias/taco.png" alt="" class="cat-taco">
+            <h3>Mexican Food</h3>
+            <div class="bar"></div>
+          </div>
+          <div class="category" data-category="batidos">
+            <img src="/assets/categorias/batido.png" alt="" class="batido" data-category="batidos">
+            <h3 data-category="batidos">Batidukis</h3>
+            <div class="bar" data-category="batidos"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section4" id="section4">
+        <div class="section4-title">
+          <h3>Los más populares</h3>
+        </div>
+
+        <div class="card-popular-container">
+          <!-- <div class="card-popular">
+            <img src="/assets/populares/Photo Menu.png" alt="">
+            <h4>La Mr. Pit</h4>
+            <p>Solo para expertos</p>
+            <div class="price-add">
+              <span>$350</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/populares/Photo Menu-1.png" alt="">
+            <h4>¡Q'Jamone!</h4>
+            <p>c/jamón crudo</p>
+            <div class="price-add">
+              <span>$350</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/populares/Photo Menu-2.png" alt="">
+            <h4>La Charly García</h4>
+            <p>¡BASTA!</p>
+            <div class="price-add">
+              <span>$380</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/populares/Photo Menu-3.png" alt="">
+            <h4>lA Maradona</h4>
+            <p>¡Eterna!</p>
+            <div class="price-add">
+              <span>$450</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/populares/Photo Menu-4.png" alt="">
+            <h4>Picantovich</h4>
+            <p>Pica 2 veces</p>
+            <div class="price-add">
+              <span>$750</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/fotos-que-faltan/Photo MenuHabulla.png" alt="">
+            <h4>La Hasbulla</h4>
+            <p>En honor al 1</p>
+            <div class="price-add">
+              <span>$350</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/fotos-que-faltan/Photo Menuleomessi.png" alt="">
+            <h4>Leo Messi</h4>
+            <p>¡De pié señores!</p>
+            <div class="price-add">
+              <span>$10</span>
+              <button class="add">Agregar</button>
+            </div>
+          </div>
+          <div class="card-popular">
+            <img src="/assets/fotos-que-faltan/Photo Menunickgi.png" alt="">
+            <h4>Nick Gi</h4>
+            <p>La que desaparece</p>
+            <div class="price-add">
+              <span>$Gratis</span>
+              <button class="add">Agregar</button>
+            </div> -->
+        </div>
+  </div>
+  </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <ul class="footer-links">
+      <li><a href="#">Términos de Uso</a></li>
+      <li><a href="#">Trabajá con Nosotros</a></li>
+      <li><a href="#">Soporte</a></li>
+    </ul>
+
+    <div class="footer-msg">
+      <p>Hecho con💖en <span class="footer-span">NUCBAZAPPI</span></p>
+    </div>
+  </footer>
+  </div>
+  <script src="/assets/data.js"></script>
+  <script src="/assets/index.js"></script>
+</body>
+
+</html>
